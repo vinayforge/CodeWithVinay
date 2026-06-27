@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vinayforge.github.io/CodeWithVinay/sitemap.xml
