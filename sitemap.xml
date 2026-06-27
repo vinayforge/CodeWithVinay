@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/web_category.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/java_category.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/tips_category.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/personal_portfolio.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/responsive_bar.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/html_roadmap.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/java_roadmap.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/java_variables.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vinayforge.github.io/CodeWithVinay/vscode_shortcuts.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
