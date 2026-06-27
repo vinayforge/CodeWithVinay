@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><title>How to Build a Responsive Navigation Bar | CodeWithVinay</title>
+
+    <meta name="description"
+    content="Learn how to build a responsive navigation bar using HTML, CSS, and JavaScript. Step-by-step tutorial for beginners with complete source code.">
+    
+    <link rel="stylesheet" href="responsive_bar.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
+</head>
+
+<body>
+
+
+      <!-- Navigation Bar-->
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <div class="logo-container">
+      <i class="fa-solid fa-code accent-icon"></i>
+      <span>Code</span><span class="accent">With</span><span>Vinay</span>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <div class="close-menu" id="close-menu">
+            ✖
+        </div>
+      <li><a href="index.html" id="home-link">Home</a></li>
+     
+            <li class="dropdown">
+                <a href="#">Categories</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="web_category.html">Web Development</a></li>
+                    <li><a href="java_category.html">Java</a></li>
+            
+                    <li><a href="tips_category.html">Programming Tips</a></li>
+                </ul>
+            </li>
+    </ul>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+  </nav>
+
+
+
+    <section class="single-page">
+        <div class="article-container">
+            <div class="category">Web Development</div>
+            <h1>How to Build a Responsive Navigation Bar</h1>
+            <p class="article-info">By Vinay - May 23, 2024 - 5 min read</p>
+            <div class="code-image">
+                <img src="portfolio-img.png" alt="">
+
+            </div>
+            <p class="tutorial-description">In this tutorial we will build a responsive navigation bar using HTML, CSS
+                and JavaScript.</p>
+
+            <h3>1. Project Structure</h3>
+            <p class="instructions">First, create a folder for your project and add the follwoing files:</p>
+            <div class="code-container">
+
+                <pre><code>
+    portfolio-website/
+            |
+            |--- index.html
+            |--- style.css
+            |--- script.js
+
+               </code></pre>
+
+            </div>
+
+            <h3>2. HTML Structure</h3>
+            <p class="instructions">Add the follwing code to your <span>index.html</span> file:</p>
+
+            <div class="code-container">
+
+                <button class="copy-btn">Copy</button>
+
+                <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Responsive Navigation Bar&lt;/title&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- Navigation Bar--&gt;
+&lt;nav class=&quot;navbar&quot;&gt;
+
+    &lt;div class=&quot;logo-container&quot;&gt;
+        &lt;h3&gt;Your Name&lt;/h3&gt;
+    &lt;/div&gt;
+
+    &lt;ul class=&quot;nav-links&quot;&gt;
+
+        &lt;div class=&quot;close-menu&quot; id=&quot;close-menu&quot;&gt;
+            ✖
+        &lt;/div&gt;
+
+        &lt;li&gt;&lt;a href=&quot;home.html&quot; id=&quot;home-link&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;projects.html&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;hire-me&quot;&gt;
+        &lt;a href=&quot;&quot; class=&quot;hire-btn&quot;&gt;Hire me&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;menu-toggle&quot; id=&quot;menu-toggle&quot;&gt;
+        ☰
+    &lt;/div&gt;
+
+&lt;/nav&gt;
+
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+            </div>
+
+
+
+            <h3>3. CSS Styling</h3>
+            <p class="instructions">Add the follwing code to your <span>style.css</span> file:</p>
+
+
+            <div class="code-container">
+
+                <button class="copy-btn">Copy</button>
+
+                <pre><code class="language-css">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9ff;
+}
+
+
+.navbar{
+   position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 64px;
+     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+     background-color: white;
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+   
+    list-style: none;
+}
+
+.nav-links li{
+   display: flex;
+   align-items: center;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover{
+  color: #4389d9 ;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+   font-weight: bold;
+    font-size: 24px;
+}
+
+
+.accent-icon{
+    color: #4389d9;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.accent{
+    color: #4389d9;
+}
+
+#home-link{
+    color: #4389d9;
+}
+
+
+
+.hire-me a{
+    padding: 12px 24px;
+    background-color: #4c7def;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.hire-me a:hover{
+   background-color: transparent;
+    color: #4c7def;
+    border: 2px solid #4c7def;
+}
+
+.hire-me a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu-toggle,
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .hire-me {
+        display: none;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+
+        gap: 30px;
+        padding: 30px;
+
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .close-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+}
+</code></pre>
+
+            </div>
+
+            <h3>4. JavaScript</h3>
+            <p class="instructions">Add interactivity using the <span>script.js</span> file.For Example:</p>
+
+
+            <div class="code-container">
+
+                <button class="copy-btn">Copy</button>
+                <pre><code class="language-javascript">
+                    const menuToggle = document.getElementById("menu-toggle");
+const closeMenu = document.getElementById("close-menu");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+});
+</code></pre>
+
+            </div>
+
+            <h3>5. Final Output</h3>
+            <p class="output">Open your <span>index.html</span> in browser and you will see your responsive navigation bar
+                up and running.</p>
+
+
+
+
+            <hr>
+            <div class="quick-links">
+                <div class="left">
+                    <div class="post">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <a href="" class="previous">
+                            <p>Previous Post</p>
+                        </a>
+                    </div>
+                    <a href="personal_portfolio.html">
+                        <p>How to build a personal portfolio using HTML, CSS and JavaScript.</p>
+                    </a>
+                </div>
+
+                <div class="right">
+                    <div class="post">
+                        <a href="" class="next">
+                            <p>Next Post</p>
+                        </a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <a href="html_roadmap.html">
+                        <p>HTML roadmap for beginners.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sidebar">
+            <!-- On This Page -->
+            <div class="topics-available">
+                <h3>On This Page</h3>
+                <p>1. Project Structure</p>
+                <p>2. HTML Structure</p>
+                <p>3. CSS Styling</p>
+                <p>4. JavaScript</p>
+                <p>5. Final Output</p>
+            </div>
+
+            <!-- Related Post -->
+            <div class="related-post">
+                <h3>Related Post</h3>
+                <a href="html_roadmap.html">
+                    <p>HTML roadmap for beginners</p>
+                </a>
+                <a href="personal_portfolio.html">
+                    <p>How to build a personal portfolio website using HTML, CSS and JavaScript</p>
+                </a>
+                
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 CodeWithVinay | Built by Vinay</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+
+        <script src="navScript.js"></script>
+
+
+        
+  <script>
+    const copyButtons = document.querySelectorAll(".copy-btn");
+
+    copyButtons.forEach(button => {
+      button.addEventListener("click", () => {
+
+        const codeBlock = button.nextElementSibling.querySelector("code");
+        const code = codeBlock.innerText;
+
+        navigator.clipboard.writeText(code);
+
+        button.innerText = "Copied!";
+
+        setTimeout(() => {
+          button.innerText = "Copy";
+        }, 2000);
+      });
+    });
+  </script> 
+</body>
+
+</html>

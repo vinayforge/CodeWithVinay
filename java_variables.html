@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Variables and Data Types Explained | CodeWithVinay</title>
+  <meta name="description"
+      content="Learn Java variables and data types with simple explanations and examples. Understand primitive and non-primitive data types in Java step by step.">
+
+<meta name="keywords"
+      content="Java variables, Java data types, primitive data types, Java tutorial, learn Java, Java for beginners">
+
+<meta name="author" content="Vinay Kumar">
+
+<meta property="og:title"
+      content="Java Variables and Data Types Explained | CodeWithVinay">
+
+<meta property="og:description"
+      content="Master Java variables and data types with practical examples and beginner-friendly explanations.">
+
+<meta property="og:type" content="article">
+
+  <link rel="stylesheet" href="java_variables.css">
+  <link rel="stylesheet" href="home.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
+</head>
+
+<body>
+
+
+  <!-- Navigation Bar-->
+      <!-- Navigation Bar-->
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <div class="logo-container">
+      <i class="fa-solid fa-code accent-icon"></i>
+      <span>Code</span><span class="accent">With</span><span>Vinay</span>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <div class="close-menu" id="close-menu">
+            ✖
+        </div>
+      <li><a href="index.html" id="home-link">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Categories</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="web_category.html">Web Development</a></li>
+                    <li><a href="java_category.html">Java</a></li>
+                    <li><a href="tips_category.html">Programming Tips</a></li>
+                </ul>
+            </li>
+    </ul>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+  </nav>
+
+
+
+  <section class="single-page">
+    <div class="article-container">
+      <div class="category">Java</div>
+      <h1>Variables and Data Types Explained in Java</h1>
+      <p class="article-info">By Vinay - May 23, 2024 - 5 min read</p>
+      <div class="code-image">
+        <img src="portfolio-img.png"
+     alt="Java Variables and Data Types tutorial illustration">
+
+      </div>
+      <p class="tutorial-description">In this tutorial we will learn Java Variables and Data Types from scratch and build a strong foundation in Java programming with simple explanations and practical examples</p>
+
+      <h3>1. What is a Variable?</h3>
+      <pre class="instructions">
+      A variable is a container used to store data in memory.
+
+      Think of it as a labeled box:
+                                Age Box → 20
+                                Name Box → "Vinay"
+      In Java:                        
+      </pre>
+      <div class="code-container">
+
+        <pre><code class="language-html">
+int age = 20;
+String name = "Vinay";
+</code></pre>
+
+      </div>
+
+      <h3>2. Variable Syntax  </h3>
+      <pre class="instructions">
+      dataType variableName = value;
+      Example:
+        int marks = 95;
+
+        Here:
+          int → data type
+          marks → variable name
+          95 → value
+      </pre>
+
+      <h3>3. Data Types in Java</h3>
+      <pre class="instructions">
+      Java data types are divided into two categories:
+      </pre>
+
+
+      <div class="code-container">
+
+        <pre><code class="language-html">
+        Data Types
+        |
+        |--- Primitive
+        |--- non-Primitive
+</code></pre>
+
+      </div>
+
+      <h3>A. Primitive Data Types</h3>
+      <pre class="instructions">
+        Java has 8 primitive data types:
+      </pre>
+
+      <table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Data Type</th>
+            <th>Size</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>byte</td>
+            <td>1 byte</td>
+            <td>byte age = 25;</td>
+        </tr>
+
+        <tr>
+            <td>short</td>
+            <td>2 bytes</td>
+            <td>short salary = 30000;</td>
+        </tr>
+
+        <tr>
+            <td>int</td>
+            <td>4 bytes</td>
+            <td>int marks = 90;</td>
+        </tr>
+
+        <tr>
+            <td>long</td>
+            <td>8 bytes</td>
+            <td>long population = 8000000000L;</td>
+        </tr>
+
+        <tr>
+            <td>float</td>
+            <td>4 bytes</td>
+            <td>float pi = 3.14f;</td>
+        </tr>
+
+        <tr>
+            <td>double</td>
+            <td>8 bytes</td>
+            <td>double price = 99.99;</td>
+        </tr>
+
+        <tr>
+            <td>char</td>
+            <td>2 bytes</td>
+            <td>char grade = 'A';</td>
+        </tr>
+
+        <tr>
+            <td>boolean</td>
+            <td>1 bit</td>
+            <td>boolean isPassed = true;</td>
+        </tr>
+    </tbody>
+</table>
+
+
+      <h3>B. Non-Primitive</h3>
+      <pre class="instructions">
+        These are objects.
+        Example:
+            String
+            Arrays
+            Classes
+            Interfaces
+
+        Example:
+            String name = "Vinay";  
+      </pre>
+
+      <div class="code-container">
+
+        <pre><code class="language-java">
+public class Main {
+    public static void main(String[] args) {
+
+        // Declaring an array with fixed size
+        int[] numbers = new int[5];
+
+    }
+}
+</code></pre>
+
+      </div>
+
+
+
+
+      <h3>4. Naming Rules for Variables</h3>
+      <pre class="instructions">
+        Valid:
+            int age;
+            int studentAge;
+            int _count;
+            int $price;
+
+        Invalid:
+              int 1age;      // Cannot start with number
+              int class;     // Reserved keyword
+              int student age;  // Spaces not allowed    
+      </pre>
+
+
+
+      <h3>5. Example Code</h3>
+      <div class="code-container">
+
+        <pre><code class="language-java">
+public class Main {
+    public static void main(String[] args) {
+
+        String name = "Sam";
+        int age = 21;
+        double cgpa = 8.5;
+        char grade = 'A';
+        boolean isStudent = true;
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("CGPA: " + cgpa);
+        System.out.println("Grade: " + grade);
+        System.out.println("Student: " + isStudent);
+    }
+}
+</code></pre>
+
+      </div>
+
+      <h3>6. Final Output</h3>
+      <p class="output">After completing this tutorial, you will have a solid understanding of Java variables and data types.</p>
+
+      <hr>
+      <div class="quick-links">
+        <div class="left">
+          <div class="post">
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="" class="previous">
+              <p>Previous Post</p>
+            </a>
+          </div>
+          <a href="java_roadmap.html">
+            <p>Java Roadmap for Beginners</p>
+          </a>
+        </div>
+
+        <div class="right">
+          <div class="post">
+            <a href="" class="next">
+              <p>Next Post</p>
+            </a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <a href="personal_portfolio.html">
+            <p>How to build a personal portfolio using HTML, CSS and JavaScript </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sidebar">
+      <!-- On This Page -->
+      <div class="topics-available">
+        <h3>On This Page</h3>
+        <p>1. What is a Variable ?</p>
+        <p>2. Variable Syntax</p>
+        <p>3. Data Types in Java</p>
+        <p>4.  Primitive Data Types</p>
+        <p>5. Non-Primitive Data Types</p>
+        <p>6. Naming Rules for Variables</p>
+        <p>7. Example Code</p>
+        <p>8. Final Output</p>
+      </div>
+
+      <!-- Related Post -->
+      <div class="related-post">
+        <h3>Related Post</h3>
+        <a href="personal_portfolio.html">
+          <p>How to Build a personal portfolio website using HTML, CSS and JavaScript</p>
+        </a>
+        <a href="java_roadmap.html">
+          <p>Java Roadmap for Beginners</p>
+        </a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 CodeWithVinay | Built by Vinay</p>
+
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+
+
+  <script>
+    const copyButtons = document.querySelectorAll(".copy-btn");
+
+    copyButtons.forEach(button => {
+      button.addEventListener("click", () => {
+
+        const codeBlock = button.nextElementSibling.querySelector("code");
+        const code = codeBlock.innerText;
+
+        navigator.clipboard.writeText(code);
+
+        button.innerText = "Copied!";
+
+        setTimeout(() => {
+          button.innerText = "Copy";
+        }, 2000);
+      });
+    });
+  </script>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
