@@ -24,9 +24,7 @@ body{
 .nav-links {
   display: flex;
   gap: 40px;
-
   list-style: none;
-  margin-right: 32px;
 }
 
 .nav-links li {
