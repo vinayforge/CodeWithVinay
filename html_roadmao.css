@@ -376,6 +376,10 @@ color: #6389f1;
     margin-left: 0;
     position: static; /* remove sticky */
   }
+
+    .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -431,6 +435,10 @@ color: #6389f1;
     .related-post {
         padding: 24px;
     }
+
+    .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -467,6 +475,10 @@ color: #6389f1;
 
     .footer {
         padding: 16px;
+    }
+
+    .dropdown-menu {
+        display: none !important;
     }
 }
 
