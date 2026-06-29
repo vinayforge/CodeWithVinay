@@ -381,6 +381,9 @@ body{
     margin: 30px 32px 0;
     position: static; /* remove sticky */
   }
+    .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -449,6 +452,9 @@ body{
   .nav-links {
     z-index: 1001;
   }
+    .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -517,6 +523,10 @@ body{
   .footer {
     padding: 16px;
   }
+
+    .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
