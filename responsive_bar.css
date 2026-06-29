@@ -394,6 +394,10 @@ transition: all 0.3s ease;
   .related-post {
     margin-right: 0;
   }
+
+    .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -445,6 +449,10 @@ transition: all 0.3s ease;
     .related-post {
         padding: 24px;
     }
+
+    .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -481,6 +489,10 @@ transition: all 0.3s ease;
 
     .footer {
         padding: 16px;
+    }
+
+    .dropdown-menu {
+        display: none !important;
     }
 }
 
