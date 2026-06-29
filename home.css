@@ -505,6 +505,10 @@ border-top-right-radius: 10px;
     .category-content {
         max-width: 100%;
     }
+
+      .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -579,6 +583,10 @@ border-top-right-radius: 10px;
     .nav-links {
         z-index: 1001;
     }
+
+      .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -650,6 +658,10 @@ border-top-right-radius: 10px;
 
     .footer {
         padding: 16px;
+    }
+
+      .dropdown-menu {
+        display: none !important;
     }
 }
 
