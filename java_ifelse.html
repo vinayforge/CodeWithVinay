@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java If-Else Statement Explained for Beginners | CodeWithVinay</title>
+
+<meta name="description"
+    content="Learn Java if-else statements from scratch with simple explanations and practical examples. This beginner-friendly tutorial covers syntax, decision making, and real-world examples.">
+
+<meta name="keywords"
+    content="Java if else, Java if statement, Java else statement, Java tutorial for beginners, Java decision making, Java conditional statements, learn Java, Java programming, CodeWithVinay">
+
+<meta name="author" content="Vinay">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+    href="https://vinayforge.github.io/CodeWithVinay/java_if_else.html">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title"
+    content="Java If-Else Statement Explained for Beginners | CodeWithVinay">
+
+<meta property="og:description"
+    content="Master Java if-else statements with beginner-friendly explanations and examples. Learn decision-making in Java step by step.">
+
+<meta property="og:type" content="article">
+
+<meta property="og:url"
+    content="https://vinayforge.github.io/CodeWithVinay/java_if_else.html">
+
+<meta property="og:image"
+    content="https://vinayforge.github.io/CodeWithVinay/portfolio-img.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title"
+    content="Java If-Else Statement Explained for Beginners | CodeWithVinay">
+
+<meta name="twitter:description"
+    content="Learn Java if-else statements with examples and simple explanations for beginners.">
+
+<meta name="twitter:image"
+    content="https://vinayforge.github.io/CodeWithVinay/portfolio-img.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMEHTE1364"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DMEHTE1364');
+    </script>
+
+    <link rel="stylesheet" href="java_ifelse.css">
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar-->
+    <!-- Navigation Bar-->
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo-container">
+            <i class="fa-solid fa-code accent-icon"></i>
+            <span>Code</span><span class="accent">With</span><span>Vinay</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <div class="close-menu" id="close-menu">
+                ✖
+            </div>
+            <li><a href="index.html" id="home-link">Home</a></li>
+            <li class="dropdown">
+                <a href="articles.html">Categories</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="web_category.html">Web Development</a></li>
+                    <li><a href="java_category.html">Java</a></li>
+                    <li><a href="tips_category.html">Programming Tips</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- HAMBURGER -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+    </nav>
+
+
+
+    <section class="single-page">
+        <div class="article-container">
+            <div class="category">Java</div>
+            <h1>Java If-Else Statement Explained for Beginners</h1>
+            <p class="article-info">By Vinay - June 29, 2026 - 5 min read</p>
+            <div class="code-image">
+                <img src="portfolio-img.png"
+     alt="Java if-else statement tutorial for beginners">
+
+            </div>
+            <p class="tutorial-description">In this tutorial we will learn Java if, else statemets from scratch and
+                build a strong foundation in Java programming with simple explanations and practical examples</p>
+
+            <h3>1. What is if-else statement?</h3>
+            <pre class="instructions">
+     The if-else statement in Java is used to make decisions in a program.
+
+     In real life, we make decisions every day:
+                            If it is raining, take an umbrella.
+                            Else, go outside normally.
+                            If your marks are greater than 90, you get Grade A.
+                            Else, you get another grade
+
+     Similarly, in Java, we use if-else statements to execute different blocks 
+     of code based on certain conditions.                       
+      </pre>
+            <h3>2. Why do we need If-Else? </h3>
+            <pre class="instructions">
+      Without decision-making, a program would execute every statement one after 
+      another without any logic.
+    
+      Imagine a login system:
+                        If the password is correct → Login successful.
+                        Else → Show an error message.   
+
+      This is where if-else becomes useful.                  
+      </pre>
+
+            <pre><code class="language-java">
+// Basic Syntax
+if (condition) {
+    // Code executes if condition is true
+} else {
+    // Code executes if condition is false
+}
+</code></pre>
+
+            <pre class="instructions">
+      Explanation:
+            "if" → Checks a condition.
+            "condition" → An expression that returns either true or false.
+            "{}"" → Contains the block of code to execute.
+            "else" → Executes when the condition is false.           
+            
+            
+        Flow of Execution:
+                    1. Java checks the condition inside the "if".
+                    2. If the condition is "true", the code inside the "if" block executes.
+                    3. If the condition is "false", the code inside the else block executes.
+                    4. Only one block executes.
+      </pre>
+
+            <h3>3. Example 1</h3>
+            <pre class="instructions">
+      Checking Age:
+      </pre>
+
+            <div class="code-container">
+
+                <button class="copy-btn">copy</button>
+
+                <pre><code class="language-java">
+ public class Main {
+     public static void main(String[] args) {
+         int age = 20; 
+         if (age >= 18) {
+             System.out.println("You can vote."); 
+            } else { System.out.println("You cannot vote."); 
+        }
+    }
+}
+</code></pre>
+
+            </div>
+
+            <pre class="instructions">
+        Output
+             You can vote.
+
+
+        How It Works
+                "age" is 20.
+                Java checks: "20 >= 18"
+                This condition is "true".
+                Therefore, the "if" block executes.
+      </pre>
+
+
+
+            <h3>4. Example 2</h3>
+            <pre class="instructions">
+            Even Or Odd Number: 
+      </pre>
+
+            <div class="code-container">
+
+                <button class="copy-btn">copy</button>
+
+                <pre><code class="language-java">
+public class Main {
+     public static void main(String[] args) {
+         int number = 7; 
+         if (number % 2 == 0) {
+             System.out.println("Even Number"); 
+            } else {
+                 System.out.println("Odd Number"); 
+            } 
+        }
+    }
+</code></pre>
+
+            </div>
+
+
+            <pre class="instructions">
+                Output:
+                    Odd Number
+
+
+                Explanation:
+
+                    The "%" operator gives the remainder.
+                        "7 % 2 = 1"
+                    Since the remainder is not 0, the number is odd.
+      </pre>
+
+            <h3>6. Final Output</h3>
+            <p class="output">After completing this tutorial, you will have a solid understanding of Java if-else statements.</p>
+
+            <hr>
+            <div class="quick-links">
+                <div class="left">
+                    <div class="post">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <a href="java_roadmap.html" class="previous">
+                            <p>Previous Post</p>
+                        </a>
+                    </div>
+                    <a href="java_roadmap.html">
+                        <p>Java Roadmap for Beginners</p>
+                    </a>
+                </div>
+
+                <div class="right">
+                    <div class="post">
+                        <a href="personal_portfolio.html" class="next">
+                            <p>Next Post</p>
+                        </a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <a href="personal_portfolio.html">
+                        <p>How to build a personal portfolio using HTML, CSS and JavaScript </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sidebar">
+            <!-- On This Page -->
+            <div class="topics-available">
+                <h3>On This Page</h3>
+                <p>1. What is if-else statement ?</p>
+                <p>2. Why do we need if-else statement?</p>
+                <p>3. Example-1</p>
+                <p>4. Example-2</p>
+                <p>5. Final Output</p>
+            </div>
+
+            <!-- Related Post -->
+            <div class="related-post">
+                <h3>Related Post</h3>
+                <a href="personal_portfolio.html">
+                    <p>How to Build a personal portfolio website using HTML, CSS and JavaScript</p>
+                </a>
+                <a href="java_roadmap.html">
+                    <p>Java Roadmap for Beginners</p>
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 CodeWithVinay | Built by Vinay</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+
+
+    <script>
+        const copyButtons = document.querySelectorAll(".copy-btn");
+
+        copyButtons.forEach(button => {
+            button.addEventListener("click", () => {
+
+                const codeBlock = button.nextElementSibling.querySelector("code");
+                const code = codeBlock.innerText;
+
+                navigator.clipboard.writeText(code);
+
+                button.innerText = "Copied!";
+
+                setTimeout(() => {
+                    button.innerText = "Copy";
+                }, 2000);
+            });
+        });
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
