@@ -339,6 +339,10 @@ body{
         width: auto;
         margin: 30px 32px 0;
     }
+
+      .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -403,6 +407,10 @@ body{
     .nav-links {
         z-index: 1001;
     }
+
+      .dropdown-menu {
+        display: none !important;
+    }
 }
 
 
@@ -462,6 +470,9 @@ body{
         width: 28px;
         height: 28px;
         font-size: 14px;
+    }
+      .dropdown-menu {
+        display: none !important;
     }
 }
 
